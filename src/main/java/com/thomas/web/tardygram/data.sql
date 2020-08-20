@@ -1,0 +1,29 @@
+-- DROP TABLE IF EXISTS customers;
+-- DROP TABLE customers;
+-- CREATE TABLE customers (
+-- id INT AUTO_INCREMENT PRIMARY KEY,
+-- customer_id VARCHAR(15) UNIQUE NOT NULL,
+-- customer_name VARCHAR(15) NOT NULL,
+-- PASSWORD VARCHAR(50) NOT NULL,
+-- ssn VARCHAR(50) UNIQUE NOT NULL,
+-- phone VARCHAR(50) NOT NULL,
+-- city VARCHAR(110) NOT NULL,
+-- address VARCHAR(110) NOT NULL,
+-- postalcode VARCHAR(50) NOT NULL,
+-- photo VARCHAR(50) DEFAULT 'defaut_photo'
+-- )DEFAULT CHARSET=utf8;
+
+CREATE TABLE member(
+    id INT AUTO_INCREMENT PRIMARY KEY,  
+    memberid VARCHAR(30) UNIQUE NOT NULL, 
+    pwd VARCHAR(50) NOT NULL, 
+    name VARCHAR(50) NOT NULL,
+    phone VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    birthday VARCHAR(50) NOT NULL,
+    gender VARCHAR(50) NOT NULL,
+    money INT DEFAULT 0
+)DEFAULT CHARSET=utf8;
+
+
+commit;
